@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Nicolay Caro</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.ico">
+
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">Nicolay Caro</a></div>
+            <ul class="links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="https://www.linkedin.com/in/nicolay-caro-0b546421b/">LinkedIn</a></li>
+                <li><a href="https://github.com/nicol4y">GitHub</a></li>
+            </ul>
+            <div class="toggle_btn"><i class="fa-solid fa-bars"></i></div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="https://www.linkedin.com/in/nicolay-caro-0b546421b/">LinkedIn</a></li>
+            <li><a href="https://github.com/nicol4y">GitHub</a></li>
+            </li>
+        </div>
+    </header>
+    <div class="form_container">
+        <form method="post" action="contact.php">
+            <h1>Contact me</h1>
+            <div class="input_container">
+                <input type="email" id="email" required autocomplete="off" placeholder="Email"/>
+            </div>
+            <div class="input_container">
+                <input type="text" id="name" required autocomplete="off" placeholder="Name"/>
+            
+            </div>
+            <div class="input_container">
+                <input
+                type="tel"
+                id="phone"
+                name="phone"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                placeholder="Phone (123-456-7890)"
+                required
+              />
+              
+            </div>
+            <div class="input_container_message">
+                <textarea placeholder="Message" id="message" class="field"></textarea>
+                
+            </div>
+            <button type="submit" class="butt">Send <i class="fa-solid fa-paper-plane"></i></button>
+
+        </form>
+
+    </div>
+    </div>
+    <script type="text/javascript" src="./text/label.js"></script>
+
+    <script type="text/javascript" src="./text/toggle.js"></script>
+
+</body>
+
+</html>
