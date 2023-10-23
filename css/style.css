@@ -178,6 +178,20 @@ textarea{
                 0 0 20px #ffc000,
                 0 0 60px #ffc000; 
 }
+/* Thanks message*/
+.thanks_msg {
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+.thanks_msg .card-head{
+    padding-top: 100px;
+font-size: 50px;
+}
+.thanks_msg .card-subhead{
+padding-top: 10px;
+    font-size: 25px;
+    }
 /* Email input 
 
 .input_container {
