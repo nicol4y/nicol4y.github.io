@@ -91,7 +91,7 @@ header {
     align-items: center;
     min-height: 50vh;
     flex: 0 0 420px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(13, 13, 13, 0.1);
     backdrop-filter: blur(15px);
 }
 .form_container h1{
