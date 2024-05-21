@@ -3,11 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+    color:black;
 }
 
 body {
     height: 100vh;
-    background-color: #000; 
+    background-color: white; 
     place-items: center;
 }
 
