@@ -128,7 +128,7 @@ header {
 .field{
 	width: 100%;
 	border: 2px solid rgba(255, 255, 255, .2);
-    color: #fff;
+    color: brown;
 	outline: none;
 	background: transparent;
 	padding: 0.5rem 1rem;
@@ -148,7 +148,7 @@ textarea{
 .input_container input {
     width: 100%;
     height: 95%;
-    background: transparent;
+    background: blue;
     border: none;
     outline: none;
     border: 2px solid rgba(255, 255, 255, .2);
