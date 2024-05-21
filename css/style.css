@@ -31,15 +31,16 @@ a {
     color: #000;
     font-size: 1.5rem;
     text-decoration-color: white;
-    transition: scale 0.2 ease;
-
+    
 }
 
 a:hover {
     color: grey;
     text-decoration: underline;
     text-underline-offset: 1rem;
-    scale: 1.05;
+}
+a:active{
+    scale: 0.95
 }
 
 /* Header */
@@ -82,7 +83,7 @@ header {
     border: none;
     outline: none;
     border-radius: 20px;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: bold;
     cursor: pointer;
     transition: scale 0.2 ease;
