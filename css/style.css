@@ -33,7 +33,9 @@ a {
 }
 
 a:hover {
-    color: orange;
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
 }
 
 /* Header */

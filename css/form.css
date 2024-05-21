@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 body {
@@ -25,7 +25,9 @@ a {
 }
 
 a:hover {
-    color: orange;
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
 }
 
 /* Header */
