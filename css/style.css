@@ -109,9 +109,9 @@ header {
     padding-top: 5vh;
     padding-bottom: 5vh;
     border-radius: 20px;
-
+outline: black;
     max-width: 480px;
-    background: salmon;
+    background: transparent;
     
 }
 
