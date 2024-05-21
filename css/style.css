@@ -111,8 +111,8 @@ header {
     border-radius: 20px;
 
     max-width: 480px;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(15px);
+    background: salmon;
+    
 }
 
 .form_container h1 {
@@ -148,7 +148,11 @@ textarea{
 .input_container input {
     width: 100%;
     height: 95%;
+<<<<<<< HEAD
     background: blue;
+=======
+    background: black;
+>>>>>>> 00a21d9ca3775dbd62b9bbc93b271a68b768d3de
     border: none;
     outline: none;
     border: 2px solid rgba(255, 255, 255, .2);
