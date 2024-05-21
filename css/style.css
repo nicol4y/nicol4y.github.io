@@ -128,9 +128,8 @@ border-color: black;
 
 .field{
 	width: 100%;
-	border: 2px solid rgba(255, 255, 255, .2);
+    border-style: solid;
     color: black;
-	outline: black;
 	background: black;
 	padding: 0.5rem 1rem;
 	font-size: 1.1rem;
