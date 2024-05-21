@@ -29,7 +29,9 @@ li {
 a {
     text-decoration: none;
     color: #000;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    text-decoration-color: white;
+    
 }
 
 a:hover {
