@@ -111,8 +111,8 @@ header {
     border-radius: 20px;
 
     max-width: 480px;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(15px);
+    background: salmon;
+    
 }
 
 .form_container h1 {
