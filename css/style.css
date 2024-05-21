@@ -31,14 +31,15 @@ a {
     color: #000;
     font-size: 1.5rem;
     text-decoration-color: white;
-    
+    transition: scale 0.2 ease;
+
 }
 
 a:hover {
     color: grey;
     text-decoration: underline;
     text-underline-offset: 1rem;
-    scale: 2rem;
+    scale: 1.2;
 }
 
 /* Header */
@@ -77,11 +78,11 @@ header {
 .action_btn {
     background-color: orange;
     color: #fff;
-    padding: 1.5rem 2rem;
+    padding: 0.5rem 1rem;
     border: none;
     outline: none;
     border-radius: 20px;
-    font-size: 0.8rem;
+    font-size: 1.5rem;
     font-weight: bold;
     cursor: pointer;
     transition: scale 0.2 ease;
