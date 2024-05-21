@@ -100,7 +100,7 @@ header {
 
 /* Contact me form*/
 .form_container {
-    background-color: black;
+    background-color: salmon;
     display: flex;
     justify-content: center;
     border-style: solid;
