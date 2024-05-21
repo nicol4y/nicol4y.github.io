@@ -38,6 +38,7 @@ a:hover {
     color: grey;
     text-decoration: underline;
     text-underline-offset: 1rem;
+    scale: 2rem;
 }
 
 /* Header */
@@ -57,7 +58,7 @@ header {
 }
 
 .navbar .logo a {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
 }
 
