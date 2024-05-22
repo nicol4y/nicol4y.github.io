@@ -100,7 +100,7 @@ header {
 
 /* Contact me form*/
 .form_container {
-    background-color: white;
+    background:greenyellow;
     display: flex;
     justify-content: center;
     border-style: solid;
@@ -114,8 +114,8 @@ header {
     max-width: 480px;    
 }
 
-.form_container .contacTitle {
-color:green;
+.form_container .contact_header{
+color: black;
 }
 
 .form_container .input_container {
@@ -151,7 +151,7 @@ textarea{
 .input_container input {
     width: 100%;
     height: 95%;
-    background: transparent;
+    background: blue;
     border: none;
     outline: black;
     border: 2px solid rgba(255, 255, 255, .2);
