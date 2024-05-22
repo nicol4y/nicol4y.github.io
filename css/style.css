@@ -114,7 +114,7 @@ header {
     max-width: 480px;    
 }
 
-.form_container h1 {
+.form_container .contacTitle {
 color:green;
 }
 
