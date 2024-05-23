@@ -77,13 +77,14 @@ header {
     position: relative;
     padding: 0 2rem;
 }
+
 nav {
     justify-content: space-around;
     align-items: center;
     height: 17vh;
     display: flex;
 
-  }
+}
 
 .navbar {
     width: 100%;
@@ -124,7 +125,8 @@ nav {
     cursor: pointer;
     transition: scale 0.2 ease;
 }
-.act_btn{
+
+.act_btn {
     margin-top: 1rem;
 }
 
@@ -377,9 +379,10 @@ section {
     font-size: 1.75rem;
 
 }
+
 .text_2_container {
-padding-bottom: 1.75rem;
-font-size: 1.25rem;
+    padding-bottom: 1.75rem;
+    font-size: 1.25rem;
 }
 
 .title_name {
@@ -409,10 +412,10 @@ font-size: 1.25rem;
 
 .btn {
     font-weight: 600;
-  transition: all 300ms ease;
-  padding: 1rem;
-  width: 8rem;
-  border-radius: 2rem;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
 
 }
 
@@ -420,7 +423,7 @@ font-size: 1.25rem;
 .btn_container_2 {
     border: rgb(53, 53, 53) 0.1rem solid;
 
-    
+
 }
 
 .btn_container_1:hover,
@@ -447,10 +450,11 @@ font-size: 1.25rem;
 .btn_container_2:hover {
     border: rgb(255, 255, 255) 0.1rem solid;
 }
+
 .btn_container {
     gap: 1rem;
 }
-  
+
 
 /* Responsive design*/
 @media screen and (max-width: 992px) {
@@ -474,29 +478,45 @@ font-size: 1.25rem;
     .dropdown_menu {
         width: unset;
     }
-    body{
-         flex-wrap: wrap;
-        justify-content:center;
+
+    body {
+        flex-wrap: wrap;
+        justify-content: center;
     }
+
     #profile {
         height: 83vh;
         margin-bottom: 0;
-        
-      }
+
+    }
+
     .pic_container,
     .btn_container {
         flex-wrap: wrap;
-        
-      }
-    .text_container{
-        margin-left: 0rem;
-    }  
-    
-    .text_1_container{
-        margin-top: 0.5cm;
+
     }
-    .profile_pic{
+
+    .text_container {
+        margin-left: 0rem;
+    }
+
+    .text_1_container {
+        margin-top: 0.5rem;
+    }
+
+    .profile_pic {
         margin-left: 0.5rem;
 
     }
+}
+
+@media screen and (max-width: 480px) {
+    #profile {
+        top:20%;
+        left: 50%;
+        right: 50%;
+        
+transform: translate(-50%);
+    }
+   
 }
