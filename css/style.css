@@ -511,12 +511,14 @@ section {
 }
 
 @media screen and (max-width: 480px) {
-    #profile {
-        top:20%;
-        left: 50%;
-        right: 50%;
-        
-transform: translate(-50%);
+    #profile{
+        width: auto;
+        height: auto;
+margin:0 5rem;
     }
+    .pic_container{
+        width:auto;
+    }
+
    
 }
