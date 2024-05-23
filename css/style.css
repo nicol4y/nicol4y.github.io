@@ -1,25 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
     height: 100vh;
-    background-color: #000;
-    background-image: url('https://www.ledr.com/colours/white.jpg');
-    background-size: cover;
-    background-position: center;
-    place-items: center;
+    background-color: whitesmoke;
+
+    padding-bottom: 10rem;
+
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body .form_container {
     display: flex;
-
     justify-content: center;
     align-items: center;
     min-height: 50vh;
+
 }
 
 li {
@@ -31,7 +35,31 @@ a {
     color: #000;
     font-size: 1.5rem;
     text-decoration-color: black;
-    
+
+}
+
+a,
+.btn {
+    transition: all 300ms ease;
+}
+
+::-webkit-scrollbar {
+    background: transparent;
+
+
+}
+
+::-webkit-scrollbar-track {
+    background-color: white;
+
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    border-left: 0;
+    border-right: 0;
+    scrollbar-width: thin;
+    background-color: black;
 }
 
 a:hover {
@@ -39,7 +67,8 @@ a:hover {
     text-decoration: underline;
     text-underline-offset: 1rem;
 }
-a:active{
+
+a:active {
     scale: 0.95
 }
 
@@ -48,6 +77,13 @@ header {
     position: relative;
     padding: 0 2rem;
 }
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+    display: flex;
+
+  }
 
 .navbar {
     width: 100%;
@@ -70,7 +106,7 @@ header {
 }
 
 .navbar .toggle_btn {
-    color: #fff;
+    color: black;
     font-size: 1.5rem;
     cursor: pointer;
     display: none;
@@ -88,8 +124,12 @@ header {
     cursor: pointer;
     transition: scale 0.2 ease;
 }
+.act_btn{
+    margin-top: 1rem;
+}
 
 .action_btn:hover {
+    text-decoration: none;
     scale: 1.05;
     color: #fff;
 }
@@ -100,7 +140,7 @@ header {
 
 /* Contact me form*/
 .form_container {
-    background:transparent;
+    background: transparent;
     display: flex;
     justify-content: center;
     border-style: solid;
@@ -111,58 +151,74 @@ header {
     padding-top: 5vh;
     padding-bottom: 5vh;
     border-radius: 20px;
-    max-width: 480px;    
+    max-width: 480px;
 }
 
-.form_container .contact_header{
-color: black;
+.form_container .contact_header {
+    color: black;
 }
 
 .form_container .input_container {
+    display: block;
     width: 100%;
     height: 50px;
     margin: 30px 0;
     border-style: solid;
     border-color: black;
-    color:white;
-	
+    border-radius: 20px;
+    background-color: transparent;
+    border-width: medium;
+
 }
 
-.field{
-	width: 100%;
+.input_container textarea::placeholder {
+    color: black;
+    text-indent: 10px;
+}
+
+.field {
+    width: 100%;
     border-style: solid;
     border-color: black;
     color: black;
-	background: black;
-	padding: 0.5rem 1rem;
-	font-size: 1.1rem;
-	margin-bottom: 22px;
-	transition: .3s;
+    background: transparent;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: .3s;
     border-radius: 20px;
+    border-width: medium;
+    resize: none;
+    scrollbar-color: #000 #f1f1f1;
 }
+
+
 .input_container_message textarea::placeholder {
-    color: white;
-}
-
-
-textarea{
-	min-height: 150px;
-}
-.input_container input {
-    width: 100%;
-    height: 95%;
+    color: black;
     background: white;
+}
+
+
+textarea {
+    min-height: 150px;
+}
+
+.input_container input {
+    width: 300px;
+    height: 95%;
+    background: transparent;
     border: none;
     outline: black;
     border: 2px solid rgba(255, 255, 255, .2);
     border-radius: 40px;
+    border-style: solid;
     font-size: 16px;
-    color: #fff;
-    padding: 20px 45px 20px 20px;
+    color: black;
+
 }
 
 .input_container input::placeholder {
-    color: #fff;
+    color: black;
 }
 
 .form_container button {
@@ -179,29 +235,34 @@ textarea{
     color: #333;
     font-weight: 600;
     transition: 0.3s ease;
-    
+
 }
-.form_container button:hover{
+
+.form_container button:hover {
     cursor: pointer;
     background: #ffc000;
     box-shadow: 0 0 5px #ffc000,
-                0 0 20px #ffc000,
-                0 0 60px #ffc000; 
+        0 0 20px #ffc000,
+        0 0 60px #ffc000;
 }
+
 /* Thanks message*/
 .thanks_msg {
     justify-content: center;
     text-align: center;
     color: #fff;
 }
-.thanks_msg .card-head{
+
+.thanks_msg .card-head {
     padding-top: 100px;
-font-size: 50px;
+    font-size: 50px;
 }
-.thanks_msg .card-subhead{
-padding-top: 10px;
+
+.thanks_msg .card-subhead {
+    padding-top: 10px;
     font-size: 25px;
-    }
+}
+
 /* Email input 
 
 .input_container {
@@ -246,8 +307,7 @@ padding-top: 10px;
 /* Dropdown Menu */
 .dropdown_menu {
     display: none;
-    position: absolute;
-    right: 2rem;
+    right: 0;
     top: 50px;
     width: 300px;
     height: 0;
@@ -266,7 +326,7 @@ padding-top: 10px;
 }
 
 .dropdown_menu.open {
-    height: 190px;
+    height: 250px;
 }
 
 .dropdown_menu .action_btn {
@@ -275,8 +335,125 @@ padding-top: 10px;
     justify-content: center;
 }
 
+/*Section*/
+section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.pic_container {
+    display: flex;
+}
+
+/*Profile*/
+#profile {
+    display: flex;
+    justify-content: left;
+    gap: 5rem;
+    height: 80vh;
+}
+
+.pic_container {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+.text_container {
+    align-self: center;
+    text-align: center;
+    margin-left: 15rem;
+}
+
+.text_container p {
+    font-weight: 600;
+}
+
+.text_1_container {
+    font-size: 1.75rem;
+
+}
+.text_2_container {
+padding-bottom: 1.75rem;
+font-size: 1.25rem;
+}
+
+.title_name {
+    font-size: 3rem;
+    text-align: center;
+}
+
+#social_links_container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+/* Icons*/
+.icon {
+    cursor: pointer;
+    height: 2rem;
+}
+
+/* Buttons */
+.btn_container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn {
+    font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+
+}
+
+.btn_container_1,
+.btn_container_2 {
+    border: rgb(53, 53, 53) 0.1rem solid;
+
+    
+}
+
+.btn_container_1:hover,
+.btn_container_2:hover {
+    cursor: pointer;
+
+}
+
+.btn_container_1,
+.btn_container_2:hover {
+    background: rgb(53, 53, 53);
+    color: white;
+}
+
+.btn_container_1:hover {
+    background: rgb(0, 0, 0);
+}
+
+.btn_container_2 {
+    background: none;
+
+}
+
+.btn_container_2:hover {
+    border: rgb(255, 255, 255) 0.1rem solid;
+}
+.btn_container {
+    gap: 1rem;
+}
+  
+
 /* Responsive design*/
-@media(max-width: 992px) {
+@media screen and (max-width: 992px) {
 
     .navbar .links,
     .navbar .action_btn {
@@ -293,9 +470,33 @@ padding-top: 10px;
     }
 }
 
-@media(max-width: 576px) {
+@media screen and (max-width: 610px) {
     .dropdown_menu {
-        left: 2rem;
         width: unset;
+    }
+    body{
+         flex-wrap: wrap;
+        justify-content:center;
+    }
+    #profile {
+        height: 83vh;
+        margin-bottom: 0;
+        
+      }
+    .pic_container,
+    .btn_container {
+        flex-wrap: wrap;
+        
+      }
+    .text_container{
+        margin-left: 0rem;
+    }  
+    
+    .text_1_container{
+        margin-top: 0.5cm;
+    }
+    .profile_pic{
+        margin-left: 0.5rem;
+
     }
 }

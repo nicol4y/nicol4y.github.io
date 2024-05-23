@@ -16,13 +16,13 @@
 <body>
     <header>
         <div class="navbar">
-            <div class="logo"><a href="./">Nicolay Caro</a></div>
+            <div class="logo"><a href="./index.html">Nicolay Caro</a></div>
             <ul class="links">
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="https://www.linkedin.com/in/nicolay-caro-0b546421b/">LinkedIn</a></li>
                 <li><a href="https://github.com/nicol4y">GitHub</a></li>
             </ul>
-            <a href="./contact.html" class="action_btn" id="contact">Contact me</a>
+            <a href="./contact.html" class="act_btn action_btn" id="contact">Contact me</a>
             <div class="toggle_btn"><i class="fa-solid fa-bars"></i></div>
         </div>
         <div class="dropdown_menu">
@@ -35,8 +35,30 @@
     </header>
     <section id="profile">
         <div class="pic_container">
+            <img class="profile_pic" src="./images/cat-circle.webp" alt="Head picture">
+            <div class="text_container">
+                <p class="text_1_container">Hello I'm</p>
+                <h1 class="title_name">Nicolay</h1>
+                <p class="text_2_container">Frontend developer</p>
+                <div class="btn_container">
+                    
+                        <button class="btn btn_container_2" onclick="window.open('./assets/Nicolay_Caro.pdf')">
+                            Download CV
+                        </button>
+                    
+                        <button class="btn btn_container_1" onclick="location.href('./#contact')">
+                            Contact info
+                        </button>
+                    
+                </div>
+                <div id="social_links_container">
+                    <img src="./images/linkedinlogo.png" alt="My linkedin profile" class="icon"
+                        onclick="location.href='https://www.linkedin.com/in/nicolay-caro-0b546421b/'">
+                    <img src="./images/githublogo.png" alt="My GitHub repository" class="icon"
+                        onclick="location.href='https://github.com/nicol4y'">
 
-
+                </div>
+            </div>
         </div>
     </section>
     <script type="text/javascript" src="./text/label.js"></script>
