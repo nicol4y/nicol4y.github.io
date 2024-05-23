@@ -10,7 +10,7 @@ body {
     height: 100vh;
     background-color: whitesmoke;
 
-    padding-bottom: 10rem;
+    padding-bottom: 5rem;
 
 }
 
@@ -197,7 +197,7 @@ nav {
 
 .input_container_message textarea::placeholder {
     color: black;
-    background: white;
+    background: whitesmoke;
 }
 
 
@@ -340,8 +340,9 @@ textarea {
 /*Section*/
 section {
     padding-top: 4vh;
-    height: 96vh;
-    margin: 0 10rem;
+    height: 40vh;
+    margin: 0 0;
+    padding-left: 10rem;
     box-sizing: border-box;
     min-height: fit-content;
 }
@@ -454,8 +455,61 @@ section {
 .btn_container {
     gap: 1rem;
 }
+/* About me Section*/
+#about {
+    display:flex;
+    flex-wrap: wrap;
+    padding-top: 5rem;
+    width: auto;
+  }
+.titles{
+    align-self: center;
+    text-align: center;
+    padding-left: 10rem;
+    
+}
+.text__container{
+    font-weight: 600;
+    font-size:1.5rem;
+}
+.about_container{
+    display: flex;
+    justify-content: left;
+    gap: 3rem;
+    height: 60vh;
+}
+.about_detail{
+    justify-content: center;
+    flex-direction: column;
+}
+.about_information{
+    gap: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    max-width: 30rem;
+}
+.about_information, .about_detail{
+    display:flex;
+    }
+.about_details_container{
+    padding: 1.5rem;
+    flex:1;
+    background: whitesmoke;
+    border: rgb(53,53,53) 0.1rem solid;
+    border-color: black;
+    text-align: center;
+    border-radius: 1rem;
+}
+.seneca{
+font-size: 16px;
+text-underline-offset: 0.5rem;
+
+}
 
 
+  
+  
+ 
 /* Responsive design*/
 @media screen and (max-width: 992px) {
 
@@ -484,14 +538,16 @@ section {
         justify-content: center;
     }
 
-    #profile {
+    #profile,
+    #about {
         height: 83vh;
         margin-bottom: 0;
 
     }
 
     .pic_container,
-    .btn_container {
+    .btn_container,
+    .titles {
         flex-wrap: wrap;
 
     }
@@ -503,6 +559,9 @@ section {
     .text_1_container {
         margin-top: 0.5rem;
     }
+    .about_container{
+        margin-top:5rem;
+    }
 
     .profile_pic {
         margin-left: 0.5rem;
@@ -511,12 +570,26 @@ section {
 }
 
 @media screen and (max-width: 480px) {
-    #profile{
+    #profile,
+    #about{
         width: auto;
         height: auto;
-margin:0 4rem;
     }
-    .pic_container{
+    .titles,
+    #about,
+    #profile{
+        padding-left: 0;
+    }
+    .pic_container,
+    .about_container{
+        padding-left: 5rem;
+    }
+    .about_details_container{
+        border-width: 95%;
+    }
+    .pic_container,
+    .titles,
+    .about_container{
         width:auto;
     }
 
